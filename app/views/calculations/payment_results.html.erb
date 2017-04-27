@@ -1,10 +1,62 @@
-<h1>Payment Results</h1>
-<h3>APR</h3>
-<p><%= @APR %></p>
-<h3>Number of years</h3>
-<p><%= @number_of_years %></p>
-<h3>Principal</h3>
-<p><%= @principal %></p>
-<h3>Monthly payment</h3>
-<p><%= @monthly_payment %></p>
-<p><a href="http://localhost:3000/payment/new" target="_blank">Calculate another payment.</a></p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <p><b>Part I Targets</b></p>
+        </div>
+        <div class="col-md-2">
+            <p><a href="http://omnicalc-params-cywang89.c9users.io/flexible/square/5">Flexible Square Example</a></p>
+        </div>
+        <div class="col-md-2">
+            <p><a href="http://omnicalc-params-cywang89.c9users.io/flexible/square_root/25">Flexible Square Root Example</a></p>
+        </div>
+        <div class="col-md-2">
+            <p><a href="http://omnicalc-params-cywang89.c9users.io/flexible/payment/410/30/250000">Flexible Payment Example</a></p>
+        </div>
+        <div class="col-md-2">
+            <p><a href="http://omnicalc-params-cywang89.c9users.io/flexible/random/1/100">Flexible Random Number Example</a></p>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-2">
+            <p><b>Part II Targets</b></p>
+        </div>
+        <div class="col-md-2">
+            <p><a href="http://omnicalc-params-cywang89.c9users.io/square/new">Square Form</a></p>
+        </div>
+        <div class="col-md-2">
+            <p><a href="http://omnicalc-params-cywang89.c9users.io/square_root/new">Square Root Form</a></p>
+        </div>
+        <div class="col-md-2">
+            <p><a href="http://omnicalc-params-cywang89.c9users.io/payment/new">Payment Form</a></p>
+        </div>
+        <div class="col-md-2">
+            <p><a href="http://omnicalc-params-cywang89.c9users.io/random_number/new">Random Number Form</a></p>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-2">
+            <p><b>Part III Targets</b></p>
+        </div>
+        <div class="col-md-2">
+            <p><a href="http://omnicalc-params-cywang89.c9users.io/word_count/new">Word Count Form</a></p>
+        </div>
+        <div class="col-md-3">
+            <p><a href="http://omnicalc-params-cywang89.c9users.io/descriptive_stats/new">Descriptive Statistics Form</a></p>
+        </div>
+    </div>
+
+
+    <h1>Payment Results</h1>
+    <p><b>APR</b></p>
+    <p><%= @APR %>%</p>
+    <p><b>Number of years</b></p>
+    <p><%= @number_of_years %></p>
+    <p><b>Principal</b></p>
+    <p><%= @principal %></p>
+    <p><b>Monthly payment</b></p>
+    <p><%= number_to_currency(@monthly_payment_rounded) %></p>
+    <p><a href="http://omnicalc-params-cywang89.c9users.io/payment/new">Calculate another payment.</a></p>
+
+</div>

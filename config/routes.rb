@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get("/omnicalc_params", {:controller => "calculations", :action => "main_page"})
+  
   get("/flexible/square/:number",{:controller => "calculations", :action => "flexible_square"})
   get("/flexible/square_root/:number", {:controller => "calculations", :action => "flexible_square_root"})
   get("/flexible/payment/:rate/:years/:principal", {:controller => "calculations", :action => "flexible_payment"})

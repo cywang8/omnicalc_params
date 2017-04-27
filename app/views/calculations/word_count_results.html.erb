@@ -1,12 +1,63 @@
-<h1>Word Count Results</h1>
-<h3>Text</h3>
-<p><%= @text %></p>
-<h3>Special word</h3>
-<p><%= @special_word %></p>
-<h3>Character Count (with spaces)</h3>
-<p><%= @character_count_with_spaces %></p>
-<h3>Character Count (without spaces)</h3>
-<p><%= @character_count_without_spaces %></p>
-<h3>Occurrences of <%= @special_word %></h3>
-<p><%= @occurrences %></p>
-<p><a href="http://localhost:3000/word_count/new" target="_blank">Process more text</a></p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <p><b>Part I Targets</b></p>
+        </div>
+        <div class="col-md-2">
+            <p><a href="http://omnicalc-params-cywang89.c9users.io/flexible/square/5">Flexible Square Example</a></p>
+        </div>
+        <div class="col-md-2">
+            <p><a href="http://omnicalc-params-cywang89.c9users.io/flexible/square_root/25">Flexible Square Root Example</a></p>
+        </div>
+        <div class="col-md-2">
+            <p><a href="http://omnicalc-params-cywang89.c9users.io/flexible/payment/410/30/250000">Flexible Payment Example</a></p>
+        </div>
+        <div class="col-md-2">
+            <p><a href="http://omnicalc-params-cywang89.c9users.io/flexible/random/1/100">Flexible Random Number Example</a></p>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-2">
+            <p><b>Part II Targets</b></p>
+        </div>
+        <div class="col-md-2">
+            <p><a href="http://omnicalc-params-cywang89.c9users.io/square/new">Square Form</a></p>
+        </div>
+        <div class="col-md-2">
+            <p><a href="http://omnicalc-params-cywang89.c9users.io/square_root/new">Square Root Form</a></p>
+        </div>
+        <div class="col-md-2">
+            <p><a href="http://omnicalc-params-cywang89.c9users.io/payment/new">Payment Form</a></p>
+        </div>
+        <div class="col-md-2">
+            <p><a href="http://omnicalc-params-cywang89.c9users.io/random_number/new">Random Number Form</a></p>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-2">
+            <p><b>Part III Targets</b></p>
+        </div>
+        <div class="col-md-2">
+            <p><a href="http://omnicalc-params-cywang89.c9users.io/word_count/new">Word Count Form</a></p>
+        </div>
+        <div class="col-md-3">
+            <p><a href="http://omnicalc-params-cywang89.c9users.io/descriptive_stats/new">Descriptive Statistics Form</a></p>
+        </div>
+    </div>
+
+    <h1>Word Count Results</h1>
+    <p><b>Text</b></p>
+    <p><%= @text %></p>
+    <p><b>Special word</b></p>
+    <p><%= @special_word %></p>
+    <p><b>Character Count (with spaces)</b></p>
+    <p><%= @character_count_with_spaces %></p>
+    <p><b>Character Count (without spaces)</b></p>
+    <p><%= @character_count_without_spaces %></p>
+    <p><b>Occurrences of <%= @special_word %></b></p>
+    <p><%= @occurrences %></p>
+    <p><a href="http://omnicalc-params-cywang89.c9users.io/word_count/new">Process more text</a></p>
+
+</div>
